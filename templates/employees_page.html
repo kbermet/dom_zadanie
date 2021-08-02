@@ -1,0 +1,14 @@
+{% load static %}
+
+{% for employee in employees  %}
+<p>
+
+        <a href="{{ employee.get_absolute_url }}" >{{ employee.name }}</a>
+
+
+</p>
+
+
+{% endfor %}
+
+
